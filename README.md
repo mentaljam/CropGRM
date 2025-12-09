@@ -6,9 +6,9 @@ CropGRM is a general model for crops spatial recognition based on time series of
 CropGRM is a gradient boosting model (Catboost) and was trained on global crop data from Europe, the USA, Canada, and China. It can recognize 12 crops: winter wheat, spring wheat, spring oats, spring barley, spring rye, spring canola, sunflower, corn, soybean, sorghum, beet, potato. The features using for prediction are spectral, phenological and climate data.
 
 The project contains 3 models with different size of predictors (they can be found in a folder --models):
-    - CropGRM-large.cbm - 134 features (list of features in --notebooks/making_prediction.ipynb)
-    - CropGRM-optimized.cbm - 82 features (list of features in --notebooks/making_prediction.ipynb)
-    - CropGRM-small.cbm - 24 features (list of features in --notebooks/making_prediction.ipynb)
+- CropGRM-large.cbm - 134 features (list of features in --notebooks/making_prediction.ipynb)
+- CropGRM-optimized.cbm - 82 features (list of features in --notebooks/making_prediction.ipynb)
+- CropGRM-small.cbm - 24 features (list of features in --notebooks/making_prediction.ipynb)
 
 Also we added a version of finetuned CropGRM-small.cbm on local data of scientific centers -  finetuned_model.cbm in folser --models
 
