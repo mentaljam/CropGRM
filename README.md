@@ -1,6 +1,6 @@
 # CropGRM
 
-CropGRM is a general model for crops spatial recognition based on time series of remote sensing and climate data. 
+CropGRM is a general model for crops spatial recognition based on time series of remote sensing and climate data.
 
 ## Description
 CropGRM is a gradient boosting model (Catboost) and was trained on global crop data from Europe, the USA, Canada, and China. It can recognize 12 crops: winter wheat, spring wheat, spring oats, spring barley, spring rye, spring canola, sunflower, corn, soybean, sorghum, beet, potato. The features using for prediction are spectral (Landsat 5, 8, 9), phenological and climate (ERA5) data.
@@ -16,7 +16,7 @@ Also we added a version of finetuned CropGRM-small.cbm on local data of scientif
 
 In order to successfully apply the model:
 - a FlatGeobuf file that contains information about the location of the fields. Each field should be assigned a unique identifier in the 'field_id' column of the attribute table. The example is in the folder --data/raw/fields.fgb
-- preprocessed feature dataset from Google Earth Engine platform for each unique field. The example is in the folder --data/processed/input_data_for_model.parquet.gzip
+- preprocessed feature dataset from Google Earth Engine platform for each unique field. The example is in the folder --data/processed/input_data_for_model.parquet
 
 The result can be obtained as tabular, vector or raster format.
 
@@ -37,7 +37,7 @@ CropGRM_main/
         raw/ # input file FlatGeobuf
             fields.fgb
         processed/ # input table with features for model prediction
-            input_data_for_model.parquet.gzip
+            input_data_for_model.parquet
         final/ # output files that can be get as FlatGeobuf or TIFF-file or tables
             CropMap_fields.tif
             CropMap_fields.fgb
