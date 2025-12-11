@@ -1,4 +1,5 @@
 pandas==2.2.3
+pyarrow==19.0.0
 geopandas==1.0.1
 rasterio==1.4.3
 catboost==1.2.8
