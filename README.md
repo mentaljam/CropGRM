@@ -45,5 +45,12 @@ CropGRM_main/
             CropGRM-optimized_predictions.csv
             CropGRM-small_predictions.csv
 ```
+## Requirements
+- Python 3.12
+- pandas
+- pyarrow
+- geopandas
+- rasterio
+- catboost
 
 
