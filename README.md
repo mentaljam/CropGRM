@@ -1,5 +1,7 @@
 # CropGRM
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 CropGRM is a general model for crop spatial recognition based on time series of
 remote sensing and climate data. It can predict 12 crop types globally.
 
@@ -52,11 +54,26 @@ Tested on Python 3.12.
 
 ## Input data
 
-- Preprocessed feature dataset from Google Earth Engine for each field (example
-  available at [data/processed/input_data_for_model.parquet](./data/processed/input_data_for_model.parquet))
 - Vector dataset with field geometries, (example available at
   [data/raw/fields.fgb](./data/raw/fields.fgb)).
+- Preprocessed feature dataset from Google Earth Engine for each field (example
+  available at [data/processed/input_data_for_model.parquet](./data/processed/input_data_for_model.parquet))
 
 The two input datasets should have the same unique identifier for joining data.
 
 The results can be obtained in tabular, vector, or raster format.
+
+## License and Attribution
+
+All trained models, datasets, and example notebooks in this repository are
+released under the Creative Commons Attribution 4.0 International (CC BY 4.0)
+license (see [LICENSE](./LICENSE)).
+
+Any use of the models - academic, commercial, or derivative - must include
+proper attribution. Please cite this repository when using, modifying, or
+distributing the models or derivative works.
+
+Example attribution:
+
+> This work uses models published in the repository
+> https://github.com/AgroDT/CropGRM, licensed under CC BY 4.0.
